@@ -1,14 +1,11 @@
-import 'dart:html';
-import 'dart:js_util';
-
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(faceapp());
+  runApp(FaceApp());
 }
 
-class faceapp extends StatelessWidget {
-  const faceapp();
+class FaceApp extends StatelessWidget {
+  const FaceApp();
 
   @override
   Widget build(BuildContext context) {
@@ -28,10 +25,11 @@ class HomeScreen extends StatelessWidget {
         children: [
           Center(
             child: Padding(
-                padding: const EdgeInsets.only(top: 100.0),
-                child: Image.asset(
-                  "images/ff.png",
-                )),
+              padding: const EdgeInsets.only(top: 100.0),
+              child: Image.asset(
+                "images/ff.png",
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 100.0),
@@ -41,11 +39,12 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   TextField(
                     decoration: InputDecoration(
-                        hintText: "Mobile number or email address",
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(),
-                          borderRadius: BorderRadius.circular(20),
-                        )),
+                      hintText: "Mobile number or email address",
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
                   ),
                   SizedBox(
                     height: 15,
@@ -53,11 +52,12 @@ class HomeScreen extends StatelessWidget {
                   TextField(
                     obscureText: true,
                     decoration: InputDecoration(
-                        hintText: "Password",
-                        border: OutlineInputBorder(
-                          borderSide: BorderSide(),
-                          borderRadius: BorderRadius.circular(20),
-                        )),
+                      hintText: "Password",
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -75,13 +75,12 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Padding(
-              padding: const EdgeInsets.only(top: 12.0),
-              child: Image.asset("images/pp.png")),
+            padding: const EdgeInsets.only(top: 12.0),
+            child: Image.asset("images/pp.png"),
+          ),
           SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 25.0,
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Row(
               children: [
                 Expanded(
